@@ -1,0 +1,135 @@
+#page-auth {
+  align-items: stretch;
+  display: flex;
+  height: 100vh;
+
+  aside {
+    background-color: #835afd;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 6;
+    padding: 120px 80px;
+
+    img {
+      max-width: 320px;
+    }
+
+    strong {
+      font: 700 36px "Poppins", sans-serif;
+      line-height: 42px;
+      margin-top: 16px;
+    }
+
+    p {
+      color: #f8f8f8;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 16px;
+    }
+  }
+
+  main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 8;
+    padding: 0 32px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    align-items: stretch;
+
+    > img {
+      align-self: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 64px 0 24px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    form {
+      input {
+        background-color: #fff;
+        border: 1px solid #a8a8b3;
+        border-radius: 8px;
+        height: 40px;
+        padding: 0 16px;
+      }
+
+      button {
+        margin-top: 16px;
+      }
+
+      button,
+      input {
+        width: 100%;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      color: #737380;
+      margin-top: 16px;
+
+      a {
+        color: #e559f9;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .create-room {
+    align-items: center;
+    background-color: #ea4335;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    height: 50px;
+    margin-top: 64px;
+    transition: filter 0.2s;
+
+    img {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  .separator {
+    align-items: center;
+    color: #a8a8b3;
+    display: flex;
+    font-size: 14px;
+    margin: 32px 0;
+
+    &::before {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #a8a8b3;
+      margin-right: 16px;
+    }
+
+    &::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: #a8a8b3;
+      margin-left: 16px;
+    }
+  }
+}
